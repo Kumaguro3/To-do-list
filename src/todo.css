@@ -1,15 +1,31 @@
 h1 {
   text-align: center;
-  margin: 30px;
+  margin: 70px;
 }
 
 form {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 h2 {
   padding-left: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.content {
+  padding-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.edit {
+  margin-left: 50px;
+}
+
+.delete {
+  margin-left: 10px;
 }

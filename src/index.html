@@ -17,22 +17,26 @@
   <body>
     <header>
       <h1>What would you like to do today?</h1>
-      <form id="new-task-form">
+    
+    </header>
+    <main>
+      <div class="row"> <div class="container-code">
+        <section class="task-list">
+            <div class="row">
+                <div class="col-6">
+
+          <h2>To Code</h2>
+            <form id="new-task-form">
         <input
           type="text"
           name="new-task-input"
           id="new-task-input"
           placeholder="What would you like to do?"
         />
-        <button type="submit" id="new-task-submit" class="btn btn-primary">
+        <button type="submit" id="new-task-submit" >
           Add task
         </button>
       </form>
-    </header>
-    <main>
-      <container>
-        <section class="task-list">
-          <h2>Tasks</h2>
 
           <div id="tasks">
             <!-- <div class="task">
@@ -44,15 +48,51 @@
 							readonly>
 					</div>
 					<div class="actions">
-						<button class="edit">Edit</button>
-						<button class="delete">Delete</button>
+						<button class="edit"> Edit</button>
+						<button class="delete"> Delete</button>
 					</div>
 				</div> -->
           </div>
-        </section>
-      </container>
+        </div>
+
+         <div class="col-6">
+
+          <h2>To fix/Debug</h2>
+
+        <form id="new-task-form-fix">
+        <input
+          type="text"
+          name="new-task-input-fix"
+          id="new-task-input-fix"
+          placeholder="What would you like to do?"
+        />
+        <button type="submit" id="new-task-submit" >
+          Add task
+        </button>
+      </form>
+
+          <div id="tasks-fix">
+            <!-- <div class="task-fix">
+					<div class="content-fix">
+						<input 
+							type="text" 
+							class="text-fix" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions-fix">
+						<button class="edit-fix"> Edit</button>
+						<button class="delete-fix"> Delete</button>
+					</div>
+				</div> -->
+          </div>
+        </div>
+        </div>
+      </section>
+      </div>
     </main>
 
     <script src="todo.js"></script>
+    <script src="todo-fix.js"></script>
   </body>
 </html>
