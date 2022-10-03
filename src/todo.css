@@ -20,18 +20,17 @@ h1 {
 
 .col-5 {
   background-color: rgb(246, 204, 204);
-  padding: 5px;
+  padding: 25px;
   margin: 20px;
   display: inline;
   justify-content: center;
-  text-align: center;
 }
 
 form {
   text-align: left;
   margin-bottom: 5px;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 input {
