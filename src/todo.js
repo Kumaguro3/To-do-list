@@ -1,12 +1,10 @@
-//Create QuerySelector to input the text change //
-
+//Create QuerySelector to input the future text change and input //
 window.addEventListener("load", () => {
   let form = document.querySelector("#new-task-form");
   let input = document.querySelector("#new-task-input");
   let list_el = document.querySelector("#tasks");
 
   //When submitting new value in the form//
-
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -35,12 +33,12 @@ window.addEventListener("load", () => {
     //Enable edit of existing task//
     let task_edit_el = document.createElement("button");
     task_edit_el.classList.add("edit");
-    task_edit_el.innerText = "Edit";
+    task_edit_el.innerHTML = "Edit";
 
     //Enable Deletion or existing task//
     let task_delete_el = document.createElement("button");
     task_delete_el.classList.add("delete");
-    task_delete_el.innerText = "Delete";
+    task_delete_el.innerHTML = "Delete";
 
     task_actions_el.appendChild(task_edit_el);
     task_actions_el.appendChild(task_delete_el);
@@ -54,12 +52,12 @@ window.addEventListener("load", () => {
     //Changing input when editing and enable saving or deleting new input inside an existing line//
 
     task_edit_el.addEventListener("click", (event) => {
-      if (task_edit_el.innerText.toLowerCase() == "edit") {
-        task_edit_el.innerText = "Save";
+      if (task_edit_el.innerHTML.toLowerCase() == "edit") {
+        task_edit_el.innerHTML = "Save";
         task_input_el.removeAttribute("readonly");
         task_input_el.focus();
       } else {
-        task_edit_el.innerText = "Edit";
+        task_edit_el.innerHTML = "Edit";
         task_input_el.setAttribute("readonly", "readonly");
       }
     });
