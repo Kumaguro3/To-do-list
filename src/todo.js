@@ -1,4 +1,4 @@
-//Create QuerySelector to input the future text change and input //
+//Create QuerySelector to target new input or list//
 window.addEventListener("load", () => {
   let form = document.querySelector("#new-task-form");
   let input = document.querySelector("#new-task-input");
@@ -19,6 +19,7 @@ window.addEventListener("load", () => {
 
     task_el.appendChild(task_content_el);
 
+    //Adds the defined attribute to the input element, and gives defined value to task//
     let task_input_el = document.createElement("input");
     task_input_el.classList.add("text");
     task_input_el.type = "text";
@@ -40,6 +41,7 @@ window.addEventListener("load", () => {
     task_delete_el.classList.add("delete");
     task_delete_el.innerHTML = "Delete";
 
+    // Link specific elements as a last child of an element//
     task_actions_el.appendChild(task_edit_el);
     task_actions_el.appendChild(task_delete_el);
 
@@ -50,7 +52,6 @@ window.addEventListener("load", () => {
     input.value = "";
 
     //Changing input when editing and enable saving or deleting new input inside an existing line//
-
     task_edit_el.addEventListener("click", (event) => {
       if (task_edit_el.innerHTML.toLowerCase() == "edit") {
         task_edit_el.innerHTML = "Save";
