@@ -1,9 +1,5 @@
 :root {
-  --dark: #03050a;
-  --grey: #494c51;
-  --red: #f55454;
-  --green: #aee6c5;
-  --white: rgb(213, 213, 213);
+  --light-pink: rgb(253, 226, 231);
 }
 
 body {
@@ -11,8 +7,8 @@ body {
   min-width: 300px;
   max-width: 900px;
   max-height: 1400px;
-  margin: 50px auto;
-  border: 2px solid var(--white);
+  margin: 30px auto;
+  border: 2px solid rgb(230, 226, 226);
   border-radius: 10px;
 }
 
@@ -33,11 +29,11 @@ h1 {
 }
 
 .container-main {
-  background-color: antiquewhite;
+  background-color: var(--light-pink);
 }
 
 .col-10 {
-  background-color: rgb(246, 204, 204);
+  background-color: white;
   padding: 5px;
   margin: 20px auto;
   text-align: left;
@@ -60,6 +56,11 @@ input {
   text-align: left;
   padding: 3px;
   border: none;
+}
+
+.task .content .text,
+.task-fix .content-fix .text-fix {
+  background-color: rgb(253, 226, 231);
 }
 
 button {
@@ -88,7 +89,7 @@ button:hover {
   flex: 100%;
   margin: 22px;
   margin-bottom: 3px;
-  justify-content: center;
+  position: relative;
 }
 
 h2 {
@@ -98,7 +99,7 @@ h2 {
 }
 
 .task .content .text:not(:read-only) {
-  color: var(--red);
+  color: red;
 }
 
 .task .actions button:active {
