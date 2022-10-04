@@ -10,7 +10,6 @@ body {
 
 .container-main {
   padding: 15px;
-  
   margin: 50px auto;
   border: 2px solid rgb(254, 254, 254);
   border-radius: 10px;
@@ -34,7 +33,7 @@ h1 {
   padding: 5px;
   margin: 15px auto;
   text-align: left;
-  display: inline;
+  
   justify-content: center;
   position: relative;
 }
