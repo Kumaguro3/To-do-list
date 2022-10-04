@@ -3,7 +3,7 @@
   --grey: #494c51;
   --red: #f55454;
   --green: #aee6c5;
-  --light: #eee;
+  --white: rgb(213, 213, 213);
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   max-width: 900px;
   max-height: 1400px;
   margin: 50px auto;
-  border: 2px solid rgb(213, 213, 213);
+  border: 2px solid var(--white);
   border-radius: 10px;
 }
 
@@ -22,7 +22,7 @@ body {
   max-width: 900px;
   max-height: 1400px;
   margin: 50px auto;
-  border: 2px solid rgb(213, 213, 213);
+  border: 2px solid rgb(254, 254, 254);
   border-radius: 10px;
 }
 
@@ -36,7 +36,7 @@ h1 {
   background-color: antiquewhite;
 }
 
-.col-5 {
+.col-10 {
   background-color: rgb(246, 204, 204);
   padding: 5px;
   margin: 20px auto;
@@ -59,6 +59,7 @@ input {
   margin-right: 0 auto;
   text-align: left;
   padding: 3px;
+  border: none;
 }
 
 button {
@@ -80,23 +81,20 @@ button:hover {
   opacity: 1;
 }
 
-.container-task {
+.task .content {
   text-align: left;
-  margin: 0 auto;
-  display: inline;
+  min-width: 80px;
+  max-width: 150px;
+  flex: 100%;
+  margin: 22px;
+  margin-bottom: 3px;
+  justify-content: center;
 }
 
 h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.content {
-  width: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .task .content .text:not(:read-only) {
@@ -112,13 +110,14 @@ h2 {
   font-size: 15px;
   border-radius: 5px;
   padding: 3px auto;
-  margin-left: 18px;
+  margin-left: 22px;
   color: rgb(13, 12, 12);
   background-color: rgb(254, 254, 254);
   opacity: 0.8;
   cursor: pointer;
   display: inline-flex;
   transition: 0.1s;
+  position: relative;
 }
 
 .task .actions .delete:hover {
