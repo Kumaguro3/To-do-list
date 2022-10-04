@@ -65,12 +65,12 @@ input {
 
 button {
   border: 2px solid var(--light-pink);
+  opacity: 0, 6;
   border-radius: 5px;
   padding: 3px auto;
   margin: 2px 2px 2px 3px;
   color: rgb(13, 12, 12);
   background-color: rgb(254, 254, 254);
-  opacity: 0.8;
   cursor: pointer;
   height: min-content;
   white-space: normal;
@@ -80,6 +80,8 @@ button {
 
 button:hover {
   opacity: 1;
+  background-color: var(--light-pink);
+  color: white;
 }
 
 .task .content {
@@ -106,7 +108,7 @@ h2 {
   opacity: 0.6;
 }
 
-.task .actions button {
+.task .actions button {s
   border: 2px solid var(--light-pink);
   font-size: 15px;
   border-radius: 5px;
@@ -123,8 +125,12 @@ h2 {
 
 .task .actions .delete:hover {
   opacity: 1;
+  background-color: var(--light-pink);
+  color: white;
 }
 
 .task .actions .edit:hover {
   opacity: 1;
+  background-color: var(--light-pink);
+  color: white;
 }
