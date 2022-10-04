@@ -40,8 +40,9 @@ form {
 }
 
 input {
-  min-width: 80px;
-  max-width: 150px;
+  min-width: 110px;
+  width: 190px;
+  max-width: 500px;
   margin-left: 0 auto;
   margin-right: 0 auto;
   text-align: left;
