@@ -7,7 +7,7 @@ body {
   min-width: 300px;
   max-width: 900px;
   max-height: 1400px;
-  margin: 30px auto;
+  margin: 0px auto;
   border: 2px solid rgb(230, 226, 226);
   border-radius: 10px;
 }
@@ -60,7 +60,7 @@ input {
 
 .task .content .text,
 .task-fix .content-fix .text-fix {
-  background-color: rgb(253, 226, 231);
+  background-color: rgb(253, 226, 231, 0.5);
 }
 
 button {
