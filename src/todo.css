@@ -4,33 +4,43 @@
 
 body {
   padding: 0 auto;
-  margin: 0px auto;
-  border-radius: 10px;
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 1800px;
+  min-height: 900px;
+  height: 1400px;
+  max-height: fit-content;
+  background-image: url("https://images-platform.99static.com//YnI6amdTi9zmJvk-DB5gm5qhZfw=/879x0:2000x1121/fit-in/590x590/99designs-contests-attachments/116/116486/attachment_116486210");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--light-pink);
 }
 
 .container-main {
-  padding: 15px;
-  margin: 50px auto;
-  border: 2px solid rgb(254, 254, 254);
-  border-radius: 10px;
-  background-color: var(--light-pink);
+  padding: 5px;
+  margin: 10px auto;
 }
 
 h1 {
   text-align: center;
-  margin: 50px auto;
+  color: rgb(4, 4, 4);
   font-size: 50px;
+  font-style: bold;
+  margin: 50px auto;
+  padding: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .col-10 {
   background-color: white;
-  padding: 5px;
-  margin: 15px auto;
+  padding: 50px;
+  margin: 10px auto;
   text-align: left;
   justify-content: center;
   position: relative;
+  border-radius: 10px;
 }
 
 form {
